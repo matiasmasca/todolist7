@@ -1,0 +1,6 @@
+<div id="<%= dom_id task %>" class="animate-pulse highlight">
+  <%= check_box_tag :completed, task.completed, task.completed,
+    data: { id: task.id, controller: 'check', action: 'click->check#active'},
+    class: '' %>
+  <%= task.name %>
+</div>
